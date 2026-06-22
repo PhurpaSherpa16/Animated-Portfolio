@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+:root{
+    --primary_blue: #2238A7;
+    --primary_offwhite: #F7F9FF;
+    --primary_black: #272727;
+}
+
+@font-face{
+    font-family: 'vogluxe';
+    src: url(/public/vogluxe.ttf);
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--primary_offwhite);
+    color: var(--primary_black);
+    font-family: 'Poppins', sans-serif;
+}
+
+@layer utilities{
+    p{
+        @apply
+        text-(--primary_black)/60
+        text-[clamp(0.875rem,1vw+0.5rem,1rem)]
+    }
+
+    span{
+        @apply
+        text-[clamp(0.875rem,0.8vw+0.5rem,1rem)]
+    }
+
+    h1{
+        @apply
+        text-xl
+        lg:text-[clamp(2rem,5vw,4rem)]
+        font-[vogluxe]
+    }
+
+    a{
+        @apply
+        text-(--primary_black)/60
+        hover:text-(--primary_black)
+        transition-colors
+        text-[clamp(0.875rem,1vw+0.5rem,1rem)]
+    }
+
+    h2{
+        @apply
+        text-[clamp(1.5rem,3vw,2.5rem)]
+    }
+
+    .mainDiv{
+        @apply
+        mx-auto px-4 md:px-8 lg:px-0 
+        max-w-7xl 2xl:max-w-[1700px]
+        h-full overflow-hidden
+    }
+
+    .heroText{
+        @apply
+        text-center md:text-left
+        block text-[clamp(3rem,8vw,10rem)] 
+        md:text-[clamp(8rem,9vw,10rem)]
+    }
+
+    button{
+        @apply
+        cursor-pointer
+        disabled:cursor-not-allowed
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .magnetic-cursor {
+    transition: none !important;
+  }
+}
