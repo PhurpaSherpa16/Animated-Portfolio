@@ -41,19 +41,18 @@ export default function Hero() {
                 </div>
                 {/* social and quick contact */}
                 <div className='flex flex-col md:flex-row items-center md:items-stretch space-y-4 
-            justify-between pt-[calc(56%+3.7rem)] md:pt-24 2xl:pt-24 pb-8'>
-                    
+            justify-between pt-[calc(56%+3.7rem)] md:pt-16 2xl:pt-24 pb-8'>
                     {/* social */}
                     <SocialBtn/>
-                        <motion.div
-                        variants={socialItem}
-                        initial="initial"
-                        animate="animate"
-                        custom={{ direction: "x", value: 30 }}>
-                            <MagneticElement strength={0.4}>
-                                <a type="email" href="mailto:phurpasherpa.frontend.dev@gmail.com">phurpasherpa.frontend.dev@gmail.com</a>
-                            </MagneticElement>
-                        </motion.div>
+                    <motion.div
+                    variants={socialItem}
+                    initial="initial"
+                    animate="animate"
+                    custom={{ direction: "x", value: 30 }}>
+                        <MagneticElement strength={0.4}>
+                            <a type="email" href="mailto:phurpasherpa.frontend.dev@gmail.com">phurpasherpa.frontend.dev@gmail.com</a>
+                        </MagneticElement>
+                    </motion.div>
                 </div>
             </div>
         </div>

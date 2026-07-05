@@ -5,6 +5,7 @@ import { AnimatePresence } from "motion/react";
 import ProjectIndex from "../pages/projects/ProjectIndex";
 import PageTransiton from "../utils/PageTransiton";
 import NotFound from "../pages/NotFound";
+import Contact from "../pages/contact/Contact";
 
 
 export default function MainRoutes(){
@@ -16,6 +17,7 @@ export default function MainRoutes(){
                     <Route index element={<PageTransiton><Index/></PageTransiton>}/>
                     <Route path="/project/:project_name" element={<PageTransiton><ProjectIndex/></PageTransiton>}/>
                 </Route>
+                <Route path="/contact" element={<PageTransiton><Contact/></PageTransiton>}/>
                 <Route path='*' element={<NotFound/>}/>
             </Routes>
         </AnimatePresence>
