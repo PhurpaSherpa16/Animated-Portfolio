@@ -174,7 +174,7 @@ const data = {
     ],
     menu:[
         {label:"Home",link:"#"},
-        {label:"About Me",link:"#about_me"},
+        {label:"About Me",link:"#about"},
         {label:"Projects",link:"#project"},
         {label:"Skills",link:"#skill"},
     ],

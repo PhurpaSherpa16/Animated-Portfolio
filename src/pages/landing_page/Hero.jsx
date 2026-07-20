@@ -41,7 +41,7 @@ export default function Hero() {
                 </div>
                 {/* social and quick contact */}
                 <div className='flex flex-col md:flex-row items-center md:items-stretch space-y-4 
-            justify-between pt-[calc(56%+3.7rem)] md:pt-16 2xl:pt-24 pb-8'>
+            justify-between pt-[calc(56%+3.7rem)] md:pt-16 min-[1400px]:pt-24! 2xl:pt-24 pb-8'>
                     {/* social */}
                     <SocialBtn/>
                     <motion.div

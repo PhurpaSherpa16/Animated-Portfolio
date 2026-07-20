@@ -38,17 +38,25 @@ export default function ProjectIndex() {
     const renderMedia = () => {
         if (!data.file || data.file.length === 0) return null
 
+
         if (data.file.length === 1) {
             const file = data.file[0]
+            
             return (
-                <video 
-                      src={file.link} 
-                      autoPlay 
-                      loop 
-                      muted 
-                      playsInline 
-                      className="w-full h-full object-cover"
-                  />
+                <>
+                {file.type === 'image'? 
+                <img src={file.link} alt="image" className='w-full h-full object-cover object-center'/>
+                :
+                    <video 
+                    src={file.link} 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    className="w-full h-full object-cover"
+                    />
+                }
+                </>
             )
         }
 
