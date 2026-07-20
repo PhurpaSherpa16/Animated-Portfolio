@@ -3,6 +3,7 @@ import Icon from '../../utils/Icon'
 import { motion } from 'framer-motion'
 import { socialItem, StaggerText } from '../../utils/Animation'
 import { MagneticElement } from '../../utils/MagneticCursor'
+import { data } from './Footer'
 
 export default function Hero() {
 
@@ -62,11 +63,7 @@ export default function Hero() {
 
 // site data, hero section
 const supporting = <span><span className='text-(--primary_blue) font-bold'>Frontend developer</span> focused on building smooth, fast, modern websites with a focus on clarity, animation, and thoughtful interaction design</span>
-const social = [
-    { label: "Dribble", link: "/" },
-    { label: "Linkedin", link: "/" },
-    { label: "Github", link: "/" },
-]
+
 
 
 const ArrowSvg = () => (
@@ -94,7 +91,7 @@ const SocialBtn = () => {
         animate="animate"
         className='flex items-center gap-4'>
             {/* social icons */}
-            {social.map((item, index)=>(
+            {data.social.map((item, index)=>(
                 <React.Fragment key={index}>
                     <MagneticElement strength={0.4}>
                         <motion.a 
@@ -109,7 +106,7 @@ const SocialBtn = () => {
                             {item.label}
                         </motion.a>
                     </MagneticElement>
-                    {index !== social.length -1 && (
+                    {index !== data.social.length -1 && (
                         <motion.div 
                         className='size-1 bg-(--primary_black)/60 rounded-full' />
                     )}

@@ -164,13 +164,13 @@ const FooterContent = () =>{
 
 
 
-const data = {
+export const data = {
     supporting:"I build digital experiences with a focus on clarity, motion, and thoughtful design. Whether it's a landing page, a content platform, or a web application, I aim to create interfaces that feel intuitive, refined, and purposeful. Good design isn't about adding more — it's about knowing what to leave out.",
     footer_supporting: "I build digital experiences with a focus on clarity, motion, and thoughtful design. Whether it's a landing page, a content platform, or a web application.",
     social:[
-        {label:"Dribble",link:"https://dribbble.com/"},
-        {label:"Linkedin",link:"https://www.linkedin.com/in/phurpa-sherpa/"},
-        {label:"Github",link:"https://github.com/PhurpaSherpa16/"},
+        {label:"Dribble",link:"https://dribbble.com/shots/27574284-Premium-Pickle-Brand-Website-E-commerce-Landing-Page-UI"},
+        {label:"Linkedin",link:"https://www.linkedin.com/in/phurpa-sherpa"},
+        {label:"Github",link:"https://github.com/PhurpaSherpa16"},
     ],
     menu:[
         {label:"Home",link:"#"},
