@@ -305,6 +305,20 @@ export default function ProjectIndex() {
                                         </ul>
                                     </div>
                                 )}
+
+                            </div>
+                        )}
+                        {data.performance_metrics && data.performance_metrics.length > 0 && (
+                            <div className="border-t border-black/5 pt-4">
+                                <h4 className="text-[10px] uppercase tracking-wider text-black/40 font-bold mb-3">Performance Metrics (Google Lighthouse)</h4>
+                                <ul className="space-y-2">
+                                    {data.performance_metrics.map((qual, idx) => (
+                                        <li key={idx} className="text-xs text-black/65 flex items-start gap-2">
+                                            <span className="text-(--primary_blue)">•</span>
+                                            <span>{qual}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         )}
                     </div>

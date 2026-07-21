@@ -2,16 +2,120 @@ export const ProjectData = {
     title:'Bringing Ideas to Life',
     supporting:'A showcase of digital products and experiences where thoughtful design, modern development, and purposeful interaction come together to solve real-world problems.',
     projects:[
+        {
+            title: "Premium Pickle E-Commerce",
+            id: "premium_pickle_ecommerce",
+            caseLink: `/project/premium_pickle_ecommerce`,
+            file: [
+                { link: "https://ik.imagekit.io/k05httq0p/Pickle/project%204.jpg", type: "image", home: true, case: true },
+            ],
+            tech: ["react", "tailwindcss", "framer-motion", "figma", "vercel"],
+            desc: "A modern premium e-commerce website crafted for an authentic Nepali pickle brand, combining storytelling, responsive design, and smooth user interactions to create a memorable online shopping experience.",
+            liveLink: "https://pickle-phurpa-sherpa.vercel.app/",
+
+            details_description:
+                "Premium Pickle is a concept e-commerce website designed for a Nepali pickle brand. The project focuses on transforming a traditional local product into a premium digital experience through modern design, engaging storytelling, and seamless user interaction. From research and wireframing to high-fidelity UI design and frontend development, every aspect of the project was completed independently to demonstrate frontend engineering and UI/UX capabilities.",
+
+            objectives: [
+                "Create a premium online presence for a traditional Nepali pickle brand.",
+                "Design a responsive shopping experience across all device sizes.",
+                "Build reusable and scalable React components for maintainability.",
+                "Enhance user engagement through smooth animations and storytelling.",
+                "Showcase products in a visually appealing and accessible way."
+            ],
+
+            what_it_solves:
+                "Many local food brands rely primarily on social media platforms such as Facebook, TikTok, and Instagram for sales, limiting their ability to build a professional digital identity. This project demonstrates how a dedicated website can strengthen brand credibility, improve product presentation, and provide customers with a centralized destination to explore products, learn the brand story, and eventually purchase online. It highlights the potential of a modern website as a long-term business asset beyond social media.",
+
+            how_i_developed:
+                "The project began with researching local food brands, competitors, and premium e-commerce experiences to understand customer expectations. Wireframes and high-fidelity designs were created in Figma before moving into development using React and Tailwind CSS. Framer Motion was integrated for smooth micro-interactions and page animations, while reusable component architecture ensured maintainability. Finally, the project was optimized and deployed on Vercel as a production-ready frontend portfolio project.",
+
+            problem_statement:
+                "Local food businesses often depend solely on social media for visibility, lacking a dedicated website that communicates brand value, builds customer trust, and provides a premium browsing experience.",
+
+            research_discovery: [
+                "Analyzed local Nepali food brands and their digital presence.",
+                "Studied premium food and specialty product websites for design inspiration.",
+                "Identified inconsistent branding and limited product presentation across social media platforms.",
+                "Discovered opportunities to improve trust through storytelling, modern layouts, and better product organization.",
+                "Focused on creating an experience that feels premium while remaining simple and familiar."
+            ],
+
+            design_process: [
+                "Conducted competitor and brand research.",
+                "Created wireframes and UI layouts in Figma.",
+                "Defined typography, spacing, and reusable design tokens.",
+                "Designed responsive layouts for mobile, tablet, laptop, desktop, and large screens.",
+                "Implemented smooth micro-interactions using Framer Motion.",
+                "Built reusable React components for scalability and maintainability."
+            ],
+            performance_metrics: [
+                "Performance: 96",
+                "Best Practices Score: 97",
+                "SEO Score: 91"
+            ],
+
+            technical_architecture: {
+                frontend: "React with reusable component architecture.",
+                styling: "Tailwind CSS using utility-first responsive design.",
+                animation: "Framer Motion for page transitions and interactive micro-animations.",
+                tooling: "Vite for fast development and optimized production builds.",
+                deployment: "Vercel for continuous deployment and hosting.",
+                design: "Figma used for wireframes, UI design, and design system."
+            },
+
+            development_challenges: [
+                {
+                    challenge: "Creating a premium feel while keeping the interface minimal.",
+                    solution: "Focused on typography hierarchy, whitespace, and subtle animations instead of visual clutter."
+                },
+                {
+                    challenge: "Maintaining responsiveness across a wide range of screen sizes.",
+                    solution: "Used Tailwind's responsive utilities combined with custom breakpoints for edge-case laptop resolutions."
+                },
+                {
+                    challenge: "Building engaging product interactions without backend functionality.",
+                    solution: "Implemented a complete frontend shopping flow including cart, checkout, and order confirmation using React state management."
+                },
+                {
+                    challenge: "Keeping animations smooth without affecting performance.",
+                    solution: "Used lightweight Framer Motion animations and optimized rendering through reusable components."
+                }
+            ],
+
+            results_impact: {
+                quantitative: [
+                    "Fully responsive across mobile, tablet, laptop, desktop, and 2XL screens.",
+                    "Developed reusable component architecture for easier scalability.",
+                    "Implemented animated shopping experience using Framer Motion.",
+                    "Optimized frontend deployment through Vercel."
+                ],
+                qualitative: [
+                    "Created a modern brand identity for a traditional food product.",
+                    "Improved product storytelling through visual hierarchy.",
+                    "Demonstrated how a dedicated website can strengthen online brand presence.",
+                    "Built as a complete frontend portfolio project from research to deployment."
+                ]
+            },
+
+            project_info: {
+                timeline: "2 Weeks",
+                role: "UI/UX Designer & Frontend Developer",
+                team_size: "1 person (Solo Project)",
+                standards: "Responsive Design, Component-Based Architecture, Accessibility Best Practices"
+            }
+        },
         {   title:"Visit Nepal",
             id:"visit_nepal",
             caseLink:`/project/visit_nepal`,
+            left:false,
             file: [
                 {link:"https://ik.imagekit.io/k05httq0p/Portfolio/Visit%20Nepal%20(1).mp4",type:'video',home:true, case:true},
                 {link:"https://ik.imagekit.io/k05httq0p/Portfolio/Visit-Nepal-landing-page.png",type:'image',home:false, case:true}
             ],
             fileLink: "",
             fileType:'video',
-            tech:['react','tailwindcss','framer', 'vercel'],
+            tech:['react','tailwindcss','framer', 'vercel','figma'],
             desc:'A modern, minimal website designed to present travel information in a clean and structured way. Focused on clarity, readability, and smooth user experience.',
             liveLink:'https://project-visit-nepal-phurpa.vercel.app',
             details_description: "Visit Nepal is a comprehensive digital travel platform that consolidates destination information, cultural insights, and practical travel guides into an intuitive interface. The project emphasizes discoverability through intelligent navigation patterns and visual hierarchy, ensuring visitors can effortlessly explore Nepal's diverse offerings from mountain expeditions to cultural heritage sites.",
@@ -69,18 +173,22 @@ export const ProjectData = {
                 role: "Solo Designer & Developer",
                 team_size: "1 person",
                 standards: "WCAG 2.1 AA accessibility, SEO best practices"
-            }
+            },
+            performance_metrics: [
+                "Performance: 95",
+                "Best Practices Score: 96",
+                "SEO Score: 82"
+            ],
         },
         {   title:"Shikshadeep Academy CMS", 
             id:"shikshadeep_academy_cms",
-            caseLink:`/project/shikshadeep_academy_cms`, 
+            caseLink:`/project/shikshadeep_academy_cms`,
             file: [
                 {link:"https://ik.imagekit.io/k05httq0p/Portfolio/Project_2.png?updatedAt=1782023956633",type:'image',home:true, case:true},
                 {link:"https://ik.imagekit.io/rphcwbz0j/Portfolio/SHIKSHADEEP%20ACADEMY%20video.mp4",type:'video',home:false, case:true},
 
             ],
-            left:false,
-            tech:['react','tailwindcss', 'node', 'supabase', 'vercel'],
+            tech:['react','tailwindcss', 'node', 'supabase', 'vercel', 'figma'],
             desc:"Combining automation, content management, and thoughtful design to improve workflows and enhance the school's online presence.",
             liveLink:'https://shikshadeep-academy.netlify.app/',
             details_description: "Shikshadeep Academy CMS is a custom content management system built specifically for educational institution operations. The platform enables school administrators to manage student records, publish academic content, automate communication workflows, and maintain a dynamic website without technical dependencies. The interface balances power with simplicity, providing advanced features through an approachable UI.",
@@ -142,104 +250,6 @@ export const ProjectData = {
                 standards: "JWT authentication, WCAG accessibility, SQL injection prevention"
             }
         },
-        {
-    title: "Premium Pickle E-Commerce",
-    id: "premium_pickle_ecommerce",
-    caseLink: `/project/premium_pickle_ecommerce`,
-    file: [
-        { link: "https://ik.imagekit.io/k05httq0p/Pickle/project%204.jpg", type: "image", home: true, case: true },
-    ],
-    tech: ["react", "tailwindcss", "framer-motion", "figma", "vercel"],
-    desc: "A modern premium e-commerce website crafted for an authentic Nepali pickle brand, combining storytelling, responsive design, and smooth user interactions to create a memorable online shopping experience.",
-    liveLink: "https://pickle-phurpa-sherpa.vercel.app/",
-
-    details_description:
-        "Premium Pickle is a concept e-commerce website designed for a Nepali pickle brand. The project focuses on transforming a traditional local product into a premium digital experience through modern design, engaging storytelling, and seamless user interaction. From research and wireframing to high-fidelity UI design and frontend development, every aspect of the project was completed independently to demonstrate frontend engineering and UI/UX capabilities.",
-
-    objectives: [
-        "Create a premium online presence for a traditional Nepali pickle brand.",
-        "Design a responsive shopping experience across all device sizes.",
-        "Build reusable and scalable React components for maintainability.",
-        "Enhance user engagement through smooth animations and storytelling.",
-        "Showcase products in a visually appealing and accessible way."
-    ],
-
-    what_it_solves:
-        "Many local food brands rely primarily on social media platforms such as Facebook, TikTok, and Instagram for sales, limiting their ability to build a professional digital identity. This project demonstrates how a dedicated website can strengthen brand credibility, improve product presentation, and provide customers with a centralized destination to explore products, learn the brand story, and eventually purchase online. It highlights the potential of a modern website as a long-term business asset beyond social media.",
-
-    how_i_developed:
-        "The project began with researching local food brands, competitors, and premium e-commerce experiences to understand customer expectations. Wireframes and high-fidelity designs were created in Figma before moving into development using React and Tailwind CSS. Framer Motion was integrated for smooth micro-interactions and page animations, while reusable component architecture ensured maintainability. Finally, the project was optimized and deployed on Vercel as a production-ready frontend portfolio project.",
-
-    problem_statement:
-        "Local food businesses often depend solely on social media for visibility, lacking a dedicated website that communicates brand value, builds customer trust, and provides a premium browsing experience.",
-
-    research_discovery: [
-        "Analyzed local Nepali food brands and their digital presence.",
-        "Studied premium food and specialty product websites for design inspiration.",
-        "Identified inconsistent branding and limited product presentation across social media platforms.",
-        "Discovered opportunities to improve trust through storytelling, modern layouts, and better product organization.",
-        "Focused on creating an experience that feels premium while remaining simple and familiar."
-    ],
-
-    design_process: [
-        "Conducted competitor and brand research.",
-        "Created wireframes and UI layouts in Figma.",
-        "Defined typography, spacing, and reusable design tokens.",
-        "Designed responsive layouts for mobile, tablet, laptop, desktop, and large screens.",
-        "Implemented smooth micro-interactions using Framer Motion.",
-        "Built reusable React components for scalability and maintainability."
-    ],
-
-    technical_architecture: {
-        frontend: "React with reusable component architecture.",
-        styling: "Tailwind CSS using utility-first responsive design.",
-        animation: "Framer Motion for page transitions and interactive micro-animations.",
-        tooling: "Vite for fast development and optimized production builds.",
-        deployment: "Vercel for continuous deployment and hosting.",
-        design: "Figma used for wireframes, UI design, and design system."
-    },
-
-    development_challenges: [
-        {
-            challenge: "Creating a premium feel while keeping the interface minimal.",
-            solution: "Focused on typography hierarchy, whitespace, and subtle animations instead of visual clutter."
-        },
-        {
-            challenge: "Maintaining responsiveness across a wide range of screen sizes.",
-            solution: "Used Tailwind's responsive utilities combined with custom breakpoints for edge-case laptop resolutions."
-        },
-        {
-            challenge: "Building engaging product interactions without backend functionality.",
-            solution: "Implemented a complete frontend shopping flow including cart, checkout, and order confirmation using React state management."
-        },
-        {
-            challenge: "Keeping animations smooth without affecting performance.",
-            solution: "Used lightweight Framer Motion animations and optimized rendering through reusable components."
-        }
-    ],
-
-    results_impact: {
-        quantitative: [
-            "Fully responsive across mobile, tablet, laptop, desktop, and 2XL screens.",
-            "Developed reusable component architecture for easier scalability.",
-            "Implemented animated shopping experience using Framer Motion.",
-            "Optimized frontend deployment through Vercel."
-        ],
-        qualitative: [
-            "Created a modern brand identity for a traditional food product.",
-            "Improved product storytelling through visual hierarchy.",
-            "Demonstrated how a dedicated website can strengthen online brand presence.",
-            "Built as a complete frontend portfolio project from research to deployment."
-        ]
-    },
-
-    project_info: {
-        timeline: "2 Weeks",
-        role: "UI/UX Designer & Frontend Developer",
-        team_size: "1 person (Solo Project)",
-        standards: "Responsive Design, Component-Based Architecture, Accessibility Best Practices"
-    }
-},
         {   title:"NGO - Website", 
             id:"ngo_website",
             caseLink:`/project/ngo_website`,
@@ -249,7 +259,7 @@ export const ProjectData = {
                 {link:"https://ik.imagekit.io/k05httq0p/Portfolio/Project_3.png",type:'image', home:true, case:true},
                 {link:"https://ik.imagekit.io/rphcwbz0j/Portfolio/Himani%20Trust.mp4",type:'video', home:false, case:true},
             ],
-            tech:['react','tailwindcss', 'netlify'],
+            tech:['react','tailwindcss', 'netlify', 'figma'],
             desc:"A responsive website built for a non-profit to share mission, projects, and support engagement. Impact: Improves visibility and donation access",
             liveLink:'https://himanitrust.netlify.app/',
             details_description: "The NGO website serves as the primary digital hub for the Himani Trust, communicating organizational mission, showcasing impact through project documentation, and facilitating supporter engagement. The design prioritizes emotional connection through thoughtful storytelling, clear impact metrics, and frictionless donation pathways. Mobile-first responsiveness ensures accessibility for audiences across varying device capabilities and connectivity conditions.",

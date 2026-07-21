@@ -12,7 +12,8 @@ A personal portfolio site presenting case studies with smooth page transitions, 
 - Tailwind CSS
 - Framer Motion
 - ImageKit (media CDN)
-- Vercel / Netlify
+- Vercel
+- Figma
 
 ## Design
 
